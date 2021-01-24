@@ -1,0 +1,12 @@
+#y-axis {
+  position: absolute;
+  z-index: 0;
+}
+
+.axis path {
+  stroke: #c1c1c1;
+}
+
+.axis .tick line {
+  stroke: #c1c1c1;
+}

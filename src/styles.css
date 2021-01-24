@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: #f8f8f8;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.w-x {
+  width: 8px;
+}
+
+.h-x4 {
+  height: 2px;
+}
+
+.h-2x {
+  height: 16px;
+}
+
+label {
+  font-size: 12px;
+}
+
+span {
+  font-size: 10px;
+  color: #666666;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.axis path {
+  stroke: #c1c1c1;
+}
+
+.axis line {
+  stroke: #c1c1c1;
+  transform: translateX(-8px);
+}
+
+.axis text {
+  color: #666666;
+}

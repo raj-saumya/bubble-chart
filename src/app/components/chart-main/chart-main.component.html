@@ -1,0 +1,45 @@
+<main class="flex-col">
+  <div class="self-end">
+    <div class="flex-row">
+      <span class="self-center">Zoom</span>
+      <div class="w-x"></div>
+      <img class="pointer" src="assets/icon-minus.svg" alt="icon-minus" (click)="reScale('out')" />
+      <div class="w-x"></div>
+      <img class="pointer" src="assets/icon-plus.svg" alt="icon-plus" (click)="reScale('in')" />
+    </div>
+  </div>
+  <div class="h-2x"></div>
+  <div id="chart-main" class="flex-grow">
+    <app-y-axis [height]="containerHeight" [width]="containerWidth" [margin]="margin" [yScale]="yScale"
+      [zoomLevel]="zoomLevel"></app-y-axis>
+    <!-- <app-x-axis></app-x-axis> -->
+    <div class="bubble-main flex-row">
+      <ng-container *ngFor="let data of [1,2,3,4,5,6,7,8,9]">
+        <div class="flex-row">
+          <div class="flex-col">
+            <div class="flex-row">
+              <app-bubble-chart [containerId]="'chart1'+data" [height]="containerHeight" [width]="200" [margin]="margin"
+                [yScale]="yScale" [zoomLevel]="zoomLevel">
+              </app-bubble-chart>
+              <!-- <app-bubble-chart [containerId]="'chart2'+data" [height]="containerHeight" [width]="200" [margin]="margin"
+                [yScale]="yScale" [zoomLevel]="zoomLevel">
+              </app-bubble-chart> -->
+            </div>
+            <div class="flex-row pad-x">
+              <img src="assets/nissan.svg" alt="icon-nissan">
+              <div class="w-x"></div>
+              <div>
+                <label>Armada</label>
+                <div class="h-x"></div>
+                <span>$ 24,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="div-v"></div>
+        </div>
+      </ng-container>
+    </div>
+    <app-scroll-sheet [height]="containerHeight" [width]="containerWidth" [margin]="margin" [zoomLevel]="zoomLevel">
+    </app-scroll-sheet>
+  </div>
+</main>

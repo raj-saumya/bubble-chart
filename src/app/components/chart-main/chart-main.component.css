@@ -1,0 +1,29 @@
+main {
+  position: absolute;
+  height: calc(100% - 64px);
+  width: calc(100% - 64px);
+  margin: 32px;
+  border: 1px solid #4c4c4c;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.bubble-main {
+  position: absolute;
+  left: 48px;
+  z-index: 2;
+  overflow: auto;
+  width: calc(100% - 64px);
+  padding-bottom: 16px;
+}
+
+.div-v {
+  width: 1px;
+  background: #c1c1c1;
+}
+
+.pad-x {
+  padding: 8px;
+}
